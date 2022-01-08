@@ -1,0 +1,139 @@
+.titlebar {
+    background: linear-gradient(0deg, rgb(36, 36, 52, 0.0) 0%, rgb(36, 36, 52) 100%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    border-radius: 6px;
+    padding: 2px 0;
+    width: 100%;
+    height: 40px;
+    z-index: 2;
+    -webkit-app-region: drag;
+}
+
+.titlebar .container {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+.logo h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.35rem;
+    user-select: none;
+    /* text-shadow: 0 0 10px rgb(30, 30, 50); */
+    text-shadow: 0 0 12px rgba(61, 154, 182, 0.5);
+    background: linear-gradient(95deg, rgb(36, 149, 255) 0%, rgb(25, 119, 207) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    vertical-align: middle;
+    margin-left: 40px;
+    -webkit-app-region: drag;
+}
+
+.buttons {
+    justify-content: center;
+    padding: 4px;
+    display: flex;
+}
+
+.buttons .ctrl-btn {
+    padding: 5px 8px;
+}
+
+.buttons .ctrl-btn .ctrl-btn-item {
+    box-shadow: 0 0 8px rgb(0, 0, 0);
+    border-radius: 50px;
+    border: none;
+    padding: 8.5px;
+    transition: ease background-color 0.15s;
+    -webkit-app-region: none;
+}
+
+.buttons .ctrl-btn .mb {
+    background-color: rgb(255, 255, 50);
+    cursor: pointer;
+}
+.buttons .ctrl-btn .mb:hover {
+    background-color: rgb(180, 180, 30);
+}
+.buttons .ctrl-btn .mb:active {
+    background-color: rgb(255, 255, 20);
+}
+.buttons .ctrl-btn .cb {
+    background-color: rgb(255, 60, 60);
+    cursor: pointer;
+}
+.buttons .ctrl-btn .cb:hover {
+    background-color: rgb(180, 30, 30);
+}
+.buttons .ctrl-btn .cb:active {
+    background-color: rgb(255, 20, 20);
+}
+
+.sidebar {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #232332;
+
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 160px;
+    height: 86%;
+    z-index: 1;
+}
+
+.sideitems {
+    list-style: none;
+}
+
+.sideitems .item {
+    text-align: center;
+    padding: 2px 4px;
+}
+
+.sideitems .item .container {
+    padding: 8px 0;
+    cursor: pointer;
+    transition: ease transform 0.25s;
+}
+
+.sideitems .item .container:hover {
+    transform: scale(1.12);
+}
+
+/* .sideitems .item .container::before {
+    background-color: rgb(80, 80, 240);
+    box-shadow: 0 0 10px rgb(90, 90, 255);
+    position: absolute;
+    content: '';
+    margin-left: 20px;
+    margin-top: 28px;
+    height: 2;
+    width: 160px;
+    left: 0;
+    right: 0;
+    transition: ease transform 0.3s, opacity 0.3s;
+    transform: scaleX(0.85);
+    opacity: 0;
+} */
+
+/* .sideitems .item .container:hover::before,
+.sidebar .item .container:focus::before {
+    transform: scaleX(0.62);
+    opacity: 0.8;
+} */
+
+.sideitems .item .container p {
+    text-shadow: 0 0 18px rgba(170, 170, 255, 0.6);
+    font-weight: 600;
+    font-size: 1.05rem;
+    user-select: none;
+
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(172, 215, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

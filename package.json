@@ -1,0 +1,16 @@
+{
+  "name": "twinsight-gui",
+  "productName": "twinsight-gui",
+  "description": "",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "twinsight",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "16.0.2"
+  }
+}
