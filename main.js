@@ -1,8 +1,12 @@
-const {app, BrowserWindow, ipcMain} = require('electron')
-const path = require('path')
+const { app, BrowserWindow, ipcMain } = require('electron')
 const ipc = ipcMain;
+const path = require('path')
 
-function createWindow () {
+try {
+  require('electron-reloader')(module);
+} catch { }
+
+function createWindow() {
   const mainWindow = new BrowserWindow({
     width: 1220,
     height: 700,

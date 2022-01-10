@@ -9,8 +9,10 @@
   "scripts": {
     "start": "electron ."
   },
-  "dependencies": {},
   "devDependencies": {
-    "electron": "16.0.2"
+    "electron": "^16.0.2"
+  },
+  "dependencies": {
+    "electron-reloader": "^1.2.1"
   }
 }
