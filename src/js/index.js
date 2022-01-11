@@ -10,3 +10,7 @@ close.addEventListener('click', () => {
     ipc.send('closeApp');
 });
 
+const slider = document.querySelector("input");
+slider.oninput = (() => {
+    
+});
