@@ -54,41 +54,87 @@
         <!-- Payloads -->
         <div class="payload">
             <!-- <h1 class="welcomer">Welcome!</h1> -->
-            <div class="container accounts hidden">
+            <div class="container accounts">
                 <h2 class="name">Accounts</h2>
+                <div class="novoline">
+                    <label><span>All:</span></label>
+                    <input type="button">
+                    <label><span>Frozen:</span></label>
+                    <input type="button">
+                </div>
+
                 <div class="padding">
                     <ul class="list">
                         <li class="item">
                             <div class="item-container">
-                                <input type="checkbox" name="checkbox-1" id="checkbox1">
-                                <label for="checkbox1">Tossymichi</label>
+                                <input type="checkbox" id="checkbox1">
+                                <label class="frozen" for="checkbox1">Tossymichi</label>
+                                <div class="info">
+                                    <p>
+                                        Link:
+                                        <span>twitter.com</span>
+                                    </p>
+                                </div>
                             </div>
                         </li>
                         <li class="item">
                             <div class="item-container">
-                                <input type="checkbox" name="checkbox-1" id="checkbox2">
+                                <input type="checkbox" id="checkbox2">
                                 <label for="checkbox2">KamigamiNerd</label>
+                                <div class="info">
+                                    <p>
+                                        Link:
+                                        <span>twitter.com</span>
+                                    </p>
+                                </div>
                             </div>
                         </li>
                         <li class="item">
                             <div class="item-container">
-                                <input type="checkbox" name="checkbox-1" id="checkbox3">
+                                <input type="checkbox" id="checkbox3">
                                 <label for="checkbox3">zozotownmoment</label>
+                                <div class="info">
+                                    <p>
+                                        Link:
+                                        <span>twitter.com</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item-container">
+                                <input type="checkbox" id="checkbox3">
+                                <label for="checkbox4">dakiwad</label>
+                                <div class="info">
+                                    <p>
+                                        Link:
+                                        <span>twitter.com</span>
+                                    </p>
+                                </div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="container tweet">
+            <div class="container tweet hidden">
                 <h2 class="name">Tweet</h2>
                 <div class="padding">
-                    <div class="sub">
-                        <label>Content</label>
+                    <div class="sub grid">
+                        <label><span>Content:</span></label>
                         <input type="text">
                     </div>
+                    <div class="sub grid">
+                        <input class="slider" id="delay" type="range" min="0" max="2000" value="200">
+                    </div>
                     <div class="sub">
-                        <label>Delay</label>
-                        <input id="delay" type="range" min="0" max="2000" value="200">
+                        <div class="novoline">
+                            <label><span>Random:</span></label>
+                            <input type="checkbox">
+                        </div>
+                        <div class="novoline">
+                            <label><span>TEST:</span></label>
+                            <input type="checkbox">
+                        </div>
                     </div>
                 </div>
             </div>

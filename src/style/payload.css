@@ -27,9 +27,12 @@
 }
 
 .payload .container .sub {
-    display: grid;
     border-bottom: 1px solid rgb(35, 35, 35);
     padding: 8px 0;
+}
+
+.payload .container .novoline {
+    padding: 2px 0;
 }
 
 .payload .container .name {
@@ -55,9 +58,14 @@
     overflow: scroll;
 }
 
-.payload .container label {
-    font-size: 0.9rem;
+.payload .container .grid label {
+    display: grid;
+}
+
+.payload .container label span {
+    font-size: 0.85rem;
     padding: 5px;
+    user-select: none;
 }
 
 .payload .container input[type=text] {
@@ -69,6 +77,7 @@
     border: 1.5px solid rgba(142, 142, 255, 0.4);
     border-radius: 2px;
     outline: none;
+    margin-top: 2px;
     padding: 2px;
     width: 60%;
     transition: ease box-shadow 0.3s;
@@ -81,8 +90,62 @@
 .payload .container input[type=range] {
     -webkit-appearance: none;
     background-color: rgb(200, 200, 200, 0.5);
+    border-radius: 50px;
+    margin-top: 5px;
     width: 60%;
     height: 3px;
+    outline: none;
+}
+
+.payload .container input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: rgb(56, 159, 255);
+    box-shadow: 0 0 10px rgb(40, 40, 40, 0.4);
+    border-radius: 50px;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    transition: ease background-color 0.2s;
+}
+
+.payload .container input[type=range]::-webkit-slider-thumb:hover {
+    background-color: rgb(50, 125, 238);
+}
+
+.payload .container input[type=checkbox] {
+    -webkit-appearance: none;
+    background-color: rgba(150, 150, 150, 0.4);
+    vertical-align: middle;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    transition: ease background-color 0.15s, box-shadow 0.15s;
+}
+
+.payload .container input[type=checkbox]:checked {
+    background-color: rgb(64, 140, 255);
+    box-shadow: 0 0 10px rgb(40, 40, 40, 0.4);
+}
+
+.payload .container input[type=button] {
+    -webkit-appearance: none;
+    background-color: rgb(173, 173, 173);
+    vertical-align: middle;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    width: 16px;
+    height: 14px;
+    transition: ease background-color 0.15s;
+}
+
+.payload .container input[type=button]:hover {
+    background-color: rgb(197, 197, 197);
+}
+
+.payload .container input[type=button]:active {
+    background-color: rgb(151, 184, 255);
 }
 
 .payload .container .list {
@@ -94,36 +157,33 @@
 }
 
 .payload .container .list .item .item-container {
-    padding: 8px 2px;
+    padding: 4px 2px;
 }
 
 .payload .container .list .item .item-container label {
-    font-size: 1.2rem;
+    color: rgb(45, 220, 45);
+    font-size: 1.1rem;
     font-weight: 500;
     user-select: none;
 }
 
-.payload .container .list .item .item-container input[type=checkbox] {
-    display: none;
+.payload .container .list .item .item-container .frozen {
+    color: rgb(240, 45, 45);
 }
 
-.payload .container .list .item .item-container input[type=checkbox] + label::before {
-    content: '\2714';
-    box-shadow: 0 0 8px rgb(60, 60, 255, 0.2);
-    font-size: 0.5rem;
-    border-style: solid;
-    border-width: 1.5px;
-    border-color: rgb(45, 45, 60);
-    border-radius: 2px;
-    margin-right: 0.8em;
-    padding: 0 2px;
-    cursor: pointer;
-    color: transparent;
-    transition: ease color 0.1s, text-shadow 0.1s;
+.payload .container .list .item .item-container .info {
+    padding: 0 10px;
 }
 
-.payload .container .list .item .item-container input[type=checkbox]:checked + label::before {
-    content: '\2714';
-    text-shadow: 0 0 8px rgb(60, 60, 255, 1.0);
-    color: rgb(27, 107, 255);
+.payload .container .list .item .item-container .info p {
+    font-size: 0.9rem;
+    color: rgb(40, 40, 40);
+    user-select: none;
+}
+
+.payload .container .list .item .item-container .info p span {
+    font-size: 0.9rem;
+    color: rgb(23, 87, 172);
+    user-select: text;
+    cursor: text;
 }
