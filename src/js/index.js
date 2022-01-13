@@ -8,7 +8,7 @@ document.querySelectorAll('.slider').forEach((it) => {
     });
 });
 
-document.querySelectorAll('.item').forEach((it)=> {
+document.querySelectorAll('.sidebar-item').forEach((it)=> {
     it.addEventListener('click', ()=> {
         let payloadId = it.getAttribute("data-payload")
 
