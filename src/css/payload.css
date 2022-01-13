@@ -8,6 +8,18 @@
     top: 0;
     left: 0;
     z-index: 0;
+    transition: all 0.5s linear;
+}
+
+.payload-container {
+    transition: all 0.2s linear;
+    opacity: 1;
+    animation: visible;
+}
+
+.payload-container-hidden {
+    opacity: 0;
+    transform: translate(0, -2vw);
 }
 
 .payload .welcomer {
@@ -42,15 +54,7 @@
     padding: 5px;
 }
 
-.payload .hidden {
-    visibility: hidden;
-}
-
 .payload .container .padding {
-    /* border-style: solid;
-    border-width: 2px;
-    border-color: rgb(32, 32, 55);
-    border-radius: 6px; */
     width: 700px;
     max-width: 700px;
     max-height: 500px;
@@ -186,4 +190,14 @@
     color: rgb(23, 87, 172);
     user-select: text;
     cursor: text;
+}
+
+@keyframes visible {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

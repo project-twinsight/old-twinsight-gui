@@ -3,9 +3,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style/index.css" rel="stylesheet">
-    <link href="style/main.css" rel="stylesheet">
-    <link href="style/payload.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/payload.css" rel="stylesheet">
     <script defer src="js/index.js"></script>
 </head>
 <body>
@@ -28,24 +28,24 @@
         </div>
         <div class="sidebar">
             <ul class="sideitems">
-                <li class="item">
+                <li class="item" data-payload="payload-accounts">
                     <div class="container">
-                        <p class="current">Accounts</p>
+                        <p class="item-text current">Accounts</p>
                     </div>
                 </li>
-                <li class="item">
+                <li class="item" data-payload="payload-tweet">
                     <div class="container">
-                        <p>Tweet</p>
+                        <p class="item-text">Tweet</p>
                     </div>
                 </li>
-                <li class="item">
+                <li class="item" data-payload="payload-retweet">
                     <div class="container">
-                        <p>Retweet</p>
+                        <p class="item-text">Retweet</p>
                     </div>
                 </li>
-                <li class="item">
+                <li class="item" data-payload="payload-favorite">
                     <div class="container">
-                        <p>Favorite</p>
+                        <p class="item-text">Favorite</p>
                     </div>
                 </li>
             </ul>
@@ -54,7 +54,7 @@
         <!-- Payloads -->
         <div class="payload">
             <!-- <h1 class="welcomer">Welcome!</h1> -->
-            <div class="container accounts">
+            <div class="container payload-container" id="payload-accounts">
                 <h2 class="name">Accounts</h2>
                 <div class="novoline">
                     <label><span>All:</span></label>
@@ -116,7 +116,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="container tweet hidden">
+            <div class="container payload-container payload-container-hidden" id="payload-tweet">
                 <h2 class="name">Tweet</h2>
                 <div class="padding">
                     <div class="sub grid">
@@ -128,12 +128,14 @@
                     </div>
                     <div class="sub">
                         <div class="novoline">
-                            <label><span>Random:</span></label>
-                            <input type="checkbox">
+                            <label><span>Random:</span>
+                                <input type="checkbox">
+                            </label>
                         </div>
                         <div class="novoline">
-                            <label><span>TEST:</span></label>
-                            <input type="checkbox">
+                            <label><span>TEST:</span>
+                                <input type="checkbox">
+                            </label>
                         </div>
                     </div>
                 </div>

@@ -26,6 +26,7 @@
     text-shadow: 0 0 12px rgb(30, 30, 50, 0.4);
     /* text-shadow: 0 0 12px rgba(61, 154, 182, 0.5); */
     background: linear-gradient(100deg, rgb(60, 167, 255) 0%, rgb(29, 100, 207) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     vertical-align: middle;
@@ -107,32 +108,14 @@
     transition: ease transform 0.25s, text-shadow 0.25s;
 }
 
+.item-text {
+    transition: color 0.25s linear;
+}
+
 .sideitems .item .container:hover {
     transform: scale(1.12);
     text-shadow: 0 0 8px rgba(91, 145, 255, 0.8);
 }
-
-/* .sideitems .item .container::before {
-    background-color: rgb(80, 80, 240);
-    box-shadow: 0 0 10px rgb(90, 90, 255);
-    position: absolute;
-    content: '';
-    margin-left: 20px;
-    margin-top: 28px;
-    height: 2;
-    width: 160px;
-    left: 0;
-    right: 0;
-    transition: ease transform 0.3s, opacity 0.3s;
-    transform: scaleX(0.85);
-    opacity: 0;
-} */
-
-/* .sideitems .item .container:hover::before,
-.sidebar .item .container:focus::before {
-    transform: scaleX(0.62);
-    opacity: 0.8;
-} */
 
 .sideitems .item .container p {
     font-weight: 700;
