@@ -19,6 +19,7 @@
 
 .payload-container-hidden {
     opacity: 0;
+    visibility: hidden;
     transform: translate(0, -2vw);
 }
 
