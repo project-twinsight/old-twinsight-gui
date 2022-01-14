@@ -62,6 +62,10 @@
     overflow: scroll;
 }
 
+.payload .container .padding-top {
+    padding: 25px 0;
+}
+
 .payload .container .grid label {
     display: grid;
 }
@@ -132,7 +136,7 @@
     box-shadow: 0 0 10px rgb(40, 40, 40, 0.4);
 }
 
-.payload .container input[type=button] {
+.payload .container .simple-button {
     -webkit-appearance: none;
     background-color: rgb(173, 173, 173);
     vertical-align: middle;
@@ -144,12 +148,37 @@
     transition: ease background-color 0.15s;
 }
 
-.payload .container input[type=button]:hover {
+.payload .container .simple-button:hover {
     background-color: rgb(197, 197, 197);
 }
 
-.payload .container input[type=button]:active {
+.payload .container .simple-button:active {
     background-color: rgb(151, 184, 255);
+}
+
+.payload .container .flat-button {
+    -webkit-appearance: none;
+    background-color: rgb(32, 110, 255);
+    color: #fff;
+    font-size: 0.98rem;
+    font-weight: 500;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 8px 0;
+    width: 180px;
+    user-select: none;
+    transition: ease background-color 0.25s;
+}
+
+.payload .container .flat-button:hover {
+    background-color: rgb(32, 73, 255);
+}
+
+.payload .container .flat-button:active {
+    background-color: rgb(30, 57, 207);
 }
 
 .payload .container .list {
