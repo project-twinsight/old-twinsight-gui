@@ -1,2 +1,2 @@
-# twinsight-gui
-gogo lessgo
+# Old twinsight gui
+使うことはありません！
